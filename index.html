@@ -8,160 +8,112 @@
 
     <!-- Bootstrap CSS -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" referrerpolicy="no-referrer" />
 
     <title>Hello, world!</title>
+
+    <style>
+        .header {
+            background-color: rgb(1, 10, 79);
+            color: #fff;
+        }
+        
+        .main-page {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="container mt-5">
-        <div class="row">
-            <div class="col">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="col">
-                            <div class="card">
-                                <div class="card-header bg-dark text-light">
-                                    <h1>
-                                        Test
-                                    </h1>
-                                </div>
-                                <div class="card-body bg-secondary">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum commodi est et magnam id error autem. Natus enim quaerat incidunt repellat quasi, nulla pariatur at est, ab similique ullam accusamus.</p>
-                                </div>
+    <section class="section-navbar">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">TP Bootstrap</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Acceuil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sujet</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Inactif</a>
+                        </li>
+                    </ul>
+
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Se connecter</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="btn btn-outline-dark">S'inscrire</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+
+        <section class="header text-center py-5">
+            <div class="container">
+                <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque rerum assumenda nulla blanditiis cupiditate perferendis?</span>
+                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Souscrire</button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content text-dark">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Fermer la POPUP"></button>
+                            </div>
+                            <div class="modal-body">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus, ducimus delectus? In, officiis! Facilis quos ducimus tempore corrupti maxime voluptatibus.
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
                             </div>
                         </div>
-
-                        <div class="col">
-                            <div class="card">
-                                <div class="card-header bg-dark text-light">
-                                    <h1>
-                                        Test
-                                    </h1>
-                                </div>
-                                <div class="card-body bg-secondary">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum commodi est et magnam id error autem. Natus enim quaerat incidunt repellat quasi, nulla pariatur at est, ab similique ullam accusamus.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col">
-                            <div class="card">
-                                <div class="card-header bg-dark text-light">
-                                    <h1>
-                                        Test
-                                    </h1>
-                                </div>
-                                <div class="card-body bg-secondary">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum commodi est et magnam id error autem. Natus enim quaerat incidunt repellat quasi, nulla pariatur at est, ab similique ullam accusamus.</p>
-                                </div>
-                            </div>
-                        </div>
                     </div>
-                    <div class="col-md-6">
-                        <section class="table-boot py-5">
-                            <div class="container">
-                                <table class="table table-dark table-striped">
-                                    <thead>
-                                        <tr>
-                                            <th scope="col">#</th>
-                                            <th scope="col">First</th>
-                                            <th scope="col">Last</th>
-                                            <th scope="col">Handle</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <th scope="row">1</th>
-                                            <td>Mark</td>
-                                            <td>Otto</td>
-                                            <td>@mdo</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">2</th>
-                                            <td>Jacob</td>
-                                            <td>Thornton</td>
-                                            <td>@fat</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">3</th>
-                                            <td colspan="2">Larry the Bird</td>
-                                            <td>@twitter</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </section>
+                </div>
+        </section>
+
+        <section class="main-page py-5">
+            <div class="container">
+                <div class="row h-100 d-flex align-items-center justify-content-center">
+                    <div class="col-lg-6">
+                        <img src="img/Moroccan flag.jpeg" alt="Moroccan-Flag" height="300" width="500">
                     </div>
-                    <div class="col-md-6">
-                        <section class="section-forms">
-                            <div class="container mb-4">
-                                <form>
-                                    <div class="mb-4">
-                                        <label class="form-label">Email address</label>
-                                        <input type="email" class="form-control">
-                                        <div class="form-text">We'll never share your email with anyone else.</div>
-                                    </div>
-                                    <div class="mb-3">
-                                        <label class="form-label">Password</label>
-                                        <input type="password" class="form-control">
-                                    </div>
-                                    <div class="mb-3 form-check">
-                                        <input type="checkbox" class="form-check-input">
-                                        <label class="form-check-label">Check me out</label>
-                                    </div>
-                                    <button type="submit" class="btn btn-primary">Submit</button>
-                                </form>
+                    <div class="col-lg-6">
+                        <h1 class="py-3">
+                            Lorem ipsum dolor sit amet.
+                        </h1 class="py-3">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta at dolor dolore aliquam eos mollitia molestias consequatur et nobis sint Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque doloribus ipsam ipsum a
+                            consequuntur iure autem minus voluptatum corrupti at Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat totam itaque laboriosam quia eos ab dolores cupiditate magni accusantium nulla dolorem quod cumque, officiis,
+                            quidem neque qui atque eligendi? Iusto?</p>
+                        <form>
+                            <div class="input-group mb-3 py-3">
+                                <input type="email" class="form-control" placeholder="Addresse email" aria-label="email" aria-describedby="basic-addon1">
+                                <button class="input-group-text btn btn-primary">Participer</button>
                             </div>
-                        </section>
+
+                        </form>
                     </div>
-                    <div class="col-md-6">
-                        <section class="section-inputs">
-                            <div class="container">
-                                <div class="mb-4">
-                                    <div class="input-group mb-3">
-                                        <span class="input-group-text" id="basic-addon1">@</span>
-                                        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
-                                    </div>
 
-                                    <div class="input-group mb-3">
-                                        <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                                        <span class="input-group-text" id="basic-addon2">@example.com</span>
-                                    </div>
-
-                                    <label for="basic-url" class="form-label">Your vanity URL</label>
-                                    <div class="input-group mb-3">
-                                        <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
-                                        <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
-                                    </div>
-
-                                    <div class="input-group mb-3">
-                                        <span class="input-group-text">$</span>
-                                        <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-                                        <span class="input-group-text">.00</span>
-                                    </div>
-
-                                    <div class="input-group mb-3">
-                                        <input type="text" class="form-control" placeholder="Username" aria-label="Username">
-                                        <span class="input-group-text">@</span>
-                                        <input type="text" class="form-control" placeholder="Server" aria-label="Server">
-                                    </div>
-
-                                    <div class="input-group">
-                                        <span class="input-group-text">With textarea</span>
-                                        <textarea class="form-control" aria-label="With textarea"></textarea>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                    </div>
 
                 </div>
             </div>
-
-        </div>
-
-    </div>
-
+        </section>
+    </section>
 
 
 
@@ -172,6 +124,13 @@
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function(tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    </script>
+
 
 
 </body>
